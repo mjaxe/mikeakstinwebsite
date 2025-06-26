@@ -1,4 +1,4 @@
-/* .app {
+.app {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -7,4 +7,4 @@
 .main-content {
     flex-grow: 1;
     min-height: calc(100vh - 20rem);
-} */
+}

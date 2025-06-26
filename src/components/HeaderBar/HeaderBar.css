@@ -1,9 +1,14 @@
 .headerbar {
-    background-color: rgb(150, 185, 173);
+    background-color: #363439;
     padding: 5rem;
     border: 3px solid black;
 }
 
 .link {
     margin: 100px;
+}
+
+.headerbar-logo {
+    width: 10rem;
+    height: auto;
 }

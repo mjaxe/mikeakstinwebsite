@@ -1,14 +1,35 @@
-.headerbar {
-    background-color: #363439;
-    padding: 5rem;
-    border: 3px solid black;
+.headerbar, .headerbar-left-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.link {
-    margin: 100px;
+.headerbar { 
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(46, 44, 44) 100%);
+    padding: 2rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.5);
 }
 
 .headerbar-logo {
-    width: 10rem;
+    width: 7rem;
     height: auto;
+    margin-right: 0.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0 1.3rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    border-bottom: 4px solid rgb(0, 216, 255);
+    transition: all 0.3s ease-out;
+}
+
+.link.active {
+    color: rgb(0, 216, 255);
+    transition: all 0.2s ease-in;
 }

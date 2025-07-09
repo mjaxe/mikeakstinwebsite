@@ -7,7 +7,7 @@
 .headerbar { 
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(46, 44, 44) 100%);
     padding: 2rem;
-    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.5);
+    box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.5);
 }
 
 .headerbar-logo {
@@ -19,7 +19,7 @@
 .link {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0 1.3rem 1rem;
     transition: all 0.3s ease-in-out;
 }
@@ -32,4 +32,36 @@
 .link.active {
     color: rgb(0, 216, 255);
     transition: all 0.2s ease-in;
+}
+
+.contact-link { 
+    text-decoration: none;
+}
+
+.contact-link-bubble {
+    color: #36395A;
+    
+}
+
+.contact-link { 
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: rgba(45, 35, 66, 0.1) 0 2px 4px,rgba(45, 35, 66, 0.1) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: box-shadow .15s,transform .15s;
+    font-size: 1.1rem;
+    padding: 1rem 0.8rem;
+    margin-right: 2rem;
+}
+
+.contact-link:hover {
+    transition: all 0.2s ease-out;
+    color:rgb(0, 216, 255)
+}
+
+.contact-link-bubble:active {
+    transition: .15s,transform .15s;
+    box-shadow: #2f2f33 0 3px 7px inset;
+    transform: translateY(2px);
 }

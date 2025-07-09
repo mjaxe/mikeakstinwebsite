@@ -1,0 +1,73 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.9rem;
+  font-size: 1.9rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title {
+    font-size: 2rem;
+}
+
+.modal-form { 
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-input-label { 
+    margin-top: 1.5rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-form-input,
+.modal-form-input-message {
+  border: 2px solid rgba(150, 150, 150, 0.1);
+  box-shadow: 0 0.1rem 0 rgba(42, 42, 42, 0.2);
+  border-radius: 6px;
+  padding: 0.6rem 0.5rem;
+  font-size: 12px;
+  font-family: 'Lucida Console', monospace;
+  box-sizing: border-box;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: white;
+}
+
+
+.modal-form-input-message { 
+    padding-bottom: 5rem;
+    resize: none;
+}
+
+.modal-form-input:focus,
+.modal-form-input-message:focus {
+  outline: none;
+  border: 2px solid rgb(0, 216, 255);
+  box-shadow: 0 0 4px rgba(0, 216, 255, 0.4);
+}

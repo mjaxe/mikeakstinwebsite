@@ -1,0 +1,64 @@
+/*
+background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+*/
+.white-background {
+    background-color: white;
+    box-shadow:
+        rgba(45, 35, 66, 0.1) 0 2px 4px,
+        rgba(45, 35, 66, 0.1) 0 7px 13px -3px,
+        #D6D6E7 0 -3px 0 inset;
+}
+
+.white-background:hover {
+    
+    color: rgb(0, 216, 255);
+    transition: all 0.3s ease-out;
+    box-shadow:
+        rgba(45, 35, 66, 0.2) 0 4px 8px,
+        rgba(45, 35, 66, 0.2) 0 10px 15px -3px,
+        #D6D6E7 0 -3px 0 inset;
+}
+
+.solid-background {
+    color: white;
+    transition: all 0.3s ease-out;
+    background-color: rgb(0, 216, 255);
+    box-shadow:
+        rgba(0, 216, 255, 0.1) 0 1px 2px,
+        rgba(0, 216, 255, 0.1) 0 3px 6px -3px,
+        rgb(0, 165, 195) 0 -3px 0 inset;
+}
+
+.solid-background:hover {
+    color: #36395A;
+    transition: all 0.3s ease-out;
+    box-shadow:
+        rgba(0, 216, 255, 0.1) 0 4px 8px,
+        rgba(0, 216, 255, 0.1) 0 10px 15px -3px,
+        rgb(0, 165, 195) 0 -3px 0 inset;
+}
+
+.custom-button {
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 3.5rem;
+}
+
+.custom-button:active {
+    box-shadow: #2f2f33 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.button-bordered {
+    border: 4px solid rgb(0, 216, 255);
+    box-shadow: none;
+}
+
+.button-rounded {
+    border-radius: 2rem;
+}

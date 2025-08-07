@@ -1,6 +1,7 @@
 import './HeaderBar.css'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../../assets/Main-Logo-White.png'
+import Button from '../Button/Button';
 
 function HeaderBar({ onOpenModal }) {
   const currentPage = useLocation();
@@ -17,9 +18,7 @@ function HeaderBar({ onOpenModal }) {
         </div>
       </div>
       <div className='headerbar-right-content'>
-        <li className='contact-link-bubble'>
-          <Link className="contact-link" onClick={onOpenModal}>Contact</Link>
-        </li>
+        <Button message={'Contact'} background='white' onClick={onOpenModal}></Button>
       </div>
     </nav>
   )

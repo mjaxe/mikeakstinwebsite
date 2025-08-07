@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.headerbar-right-content {
+    padding-right: 2rem;
+}
+
 .headerbar { 
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(46, 44, 44) 100%);
     padding: 2rem;

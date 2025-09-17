@@ -7,9 +7,8 @@ function HeaderBar() {
   const currentPage = useLocation();
 
   const contact = () => {
-    // window.location.href = "mailto:makstin33@gmail.com?subject=Hello&body=Just wanted to say hi!";
     const mailtoString = import.meta.env.VITE_MAILTO_STRING
-    console.log(mailtoString)
+    window.location.href = mailtoString;
   }
 
   return (

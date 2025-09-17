@@ -3,8 +3,14 @@ import { Link, useLocation } from 'react-router-dom'
 import logo from '../../assets/Main-Logo-White.png'
 import Button from '../Button/Button';
 
-function HeaderBar({ onOpenModal }) {
+function HeaderBar() {
   const currentPage = useLocation();
+
+  const contact = () => {
+    // window.location.href = "mailto:makstin33@gmail.com?subject=Hello&body=Just wanted to say hi!";
+    const mailtoString = import.meta.env.VITE_MAILTO_STRING
+    console.log(mailtoString)
+  }
 
   return (
     <nav className='headerbar'>
@@ -18,7 +24,7 @@ function HeaderBar({ onOpenModal }) {
         </div>
       </div>
       <div className='headerbar-right-content'>
-        <Button message={'Contact'} background='white' onClick={onOpenModal}></Button>
+        <Button message={'Contact'} background='white' onClick={contact}></Button>
       </div>
     </nav>
   )

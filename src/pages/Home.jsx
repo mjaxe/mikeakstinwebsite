@@ -4,7 +4,7 @@ function Home () {
     return (
         <div className='home'>
             <p>this is the home page!</p>
-            <Button message={'Test'}></Button>
+            <Button rounded={true} message={'Test'}></Button>
         </div>
     )
 }

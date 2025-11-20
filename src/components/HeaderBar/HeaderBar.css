@@ -1,17 +1,18 @@
-.headerbar, .headerbar-left-content {
+.headerbar,
+.desktop-headerbar-left-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.headerbar-right-content {
+.desktop-headerbar-right-content {
     padding-right: 2rem;
 }
 
-.headerbar { 
+.headerbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(46, 44, 44) 100%);
     padding: 2rem;
-    box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.5);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .headerbar-logo {
@@ -38,34 +39,64 @@
     transition: all 0.2s ease-in;
 }
 
-.contact-link { 
-    text-decoration: none;
+.mobile-headerbar {
+    display: none;
 }
 
-.contact-link-bubble {
-    color: #36395A;
-    
-}
+@media (max-width: 768px) {
 
-.contact-link { 
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: rgba(45, 35, 66, 0.1) 0 2px 4px,rgba(45, 35, 66, 0.1) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: box-shadow .15s,transform .15s;
-    font-size: 1.1rem;
-    padding: 1rem 0.8rem;
-    margin-right: 2rem;
-}
+    .desktop-headerbar-links,
+    .desktop-headerbar-right-content {
+        display: none;
+    }
 
-.contact-link:hover {
-    transition: all 0.2s ease-out;
-    color:rgb(0, 216, 255)
-}
+    .mobile-headerbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.contact-link-bubble:active {
-    transition: .15s,transform .15s;
-    box-shadow: #2f2f33 0 3px 7px inset;
-    transform: translateY(2px);
+    .mobile-hamburger-toggle {
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .hamburger-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mobile-headerbar-links {
+        position: fixed;
+        top: 0;
+        right: -600px;
+        height: 100vh;
+        width: 11rem;
+        padding: 2rem 1rem 1rem 1rem;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: right 0.3s ease-in-out;
+        background-color: #1a1a1a;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.3rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-headerbar-links.open {
+        right: 0;
+    }
+    .mobile-link {
+        font-size: 1.15rem;
+        padding: 0 1rem 0.2rem;
+        border-bottom: 4px solid transparent;
+        transition: border-bottom-color 0.3s ease-out;
+        margin-bottom: 0.7rem;
+    }
+    .mobile-link:hover {
+        border-bottom: 4px solid rgb(0, 216, 255);
+    }
 }
